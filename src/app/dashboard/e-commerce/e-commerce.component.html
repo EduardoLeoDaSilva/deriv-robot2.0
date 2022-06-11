@@ -4,7 +4,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <p class="mb-0 text-secondary">Revenue</p>
+                        <p class="mb-0 text-secondary">Total ganho</p>
                         <h4 class="my-1">$4805</h4>
                         <p class="mb-0 font-13 text-success"><i class='bx bxs-up-arrow align-middle'></i>$34 Since last week</p>
                     </div>
@@ -15,28 +15,12 @@
             </div>
         </div>
     </div>
-    <div class="col">
-        <div class="card radius-10">
-            <div class="card-body">
-                <div class="d-flex align-items-center">
-                    <div>
-                        <p class="mb-0 text-secondary">Total Customers</p>
-                        <h4 class="my-1">8.4K</h4>
-                        <p class="mb-0 font-13 text-success"><i class='bx bxs-up-arrow align-middle'></i>14% Since last week</p>
-                    </div>
-                    <div class="widgets-icons bg-light-warning text-warning ms-auto"><i class='bx bxs-group'></i>
-                    </div>
-                </div>
-                <div id="chart2"></div>
-            </div>
-        </div>
-    </div>
     <div class="col-lg-12">
         <div class="card radius-10">
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <p class="mb-0 text-secondary">Store Visitors</p>
+                        <p class="mb-0 text-secondary">Total perdido</p>
                         <h4 class="my-1">59K</h4>
                         <p class="mb-0 font-13 text-danger"><i class='bx bxs-down-arrow align-middle'></i>12.4% Since last week</p>
                     </div>
@@ -47,6 +31,22 @@
             </div>
         </div>
     </div>
+    <div class="col">
+      <div class="card radius-10">
+          <div class="card-body">
+              <div class="d-flex align-items-center">
+                  <div>
+                      <p class="mb-0 text-secondary">Total aportado</p>
+                      <h4 class="my-1">8.4K</h4>
+                      <p class="mb-0 font-13 text-success"><i class='bx bxs-up-arrow align-middle'></i>14% Since last week</p>
+                  </div>
+                  <div class="widgets-icons bg-light-warning text-warning ms-auto"><i class='bx bxs-group'></i>
+                  </div>
+              </div>
+              <div id="chart2"></div>
+          </div>
+      </div>
+  </div>
 </div>
 <!--end row-->
 <div class="row row-cols-1 row-cols-xl-2">
@@ -55,7 +55,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h5 class="mb-1">Store Metrics</h5>
+                        <h5 class="mb-1">Métricas dos robôs</h5>
                         <p class="mb-0 font-13 text-secondary"><i class='bx bxs-calendar'></i>in last 30 days revenue</p>
                     </div>
                     <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
@@ -64,21 +64,21 @@
                 <div class="row row-cols-1 row-cols-sm-3 mt-4">
                     <div class="col">
                         <div>
-                            <p class="mb-0 text-secondary">Revenue</p>
+                            <p class="mb-0 text-secondary">Ganho</p>
                             <h4 class="my-1">$4805</h4>
                             <p class="mb-0 font-13 text-success"><i class='bx bxs-up-arrow align-middle'></i>$1458 Since last month</p>
                         </div>
                     </div>
                     <div class="col">
                         <div>
-                            <p class="mb-0 text-secondary">Total Customers</p>
+                            <p class="mb-0 text-secondary">Perdido</p>
                             <h4 class="my-1">8.4K</h4>
                             <p class="mb-0 font-13 text-success"><i class='bx bxs-up-arrow align-middle'></i>12.3% Since last month</p>
                         </div>
                     </div>
                     <div class="col">
                         <div>
-                            <p class="mb-0 text-secondary">Store Visitors</p>
+                            <p class="mb-0 text-secondary">Assertividade</p>
                             <h4 class="my-1">59K</h4>
                             <p class="mb-0 font-13 text-danger"><i class='bx bxs-down-arrow align-middle'></i>2.4% Since last month</p>
                         </div>
@@ -93,7 +93,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h5 class="mb-1">Top Products</h5>
+                        <h5 class="mb-1">Robôs mais Utilizados</h5>
                         <p class="mb-0 font-13 text-secondary"><i class='bx bxs-calendar'></i>in last 30 days revenue</p>
                     </div>
                     <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
@@ -252,8 +252,8 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h5 class="mb-1">Transaction History</h5>
-                        <p class="mb-0 font-13 text-secondary"><i class='bx bxs-calendar'></i>in last 30 days revenue</p>
+                        <h5 class="mb-1">Histórico de transações</h5>
+                        <p class="mb-0 font-13 text-secondary"><i class='bx bxs-calendar'></i>nos últimos 30 dias</p>
                     </div>
                     <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
@@ -262,9 +262,10 @@
                     <table class="table align-middle mb-0 table-hover" id="Transaction-History">
                         <thead class="table-light">
                             <tr>
-                                <th>Payment Name</th>
-                                <th>Date & Time</th>
-                                <th>Amount</th>
+                                <th>Robô</th>
+                                <!-- <th>Mercado e tempo</th> -->
+                                <th>Data</th>
+                                <th>Aporte</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -276,15 +277,25 @@
                                             <img src="assets/images/avatars/avatar-1.png" class="rounded-circle" width="46" height="46" alt="" />
                                         </div>
                                         <div class="ms-2">
-                                            <h6 class="mb-1 font-14">Payment from Michle Jhon</h6>
-                                            <p class="mb-0 font-13 text-secondary">Refrence Id #8547846</p>
+                                            <h6 class="mb-1 font-14">Super under</h6>
+                                            <p class="mb-0 font-13 text-secondary">Id do contrado #351513515</p>
                                         </div>
                                     </div>
                                 </td>
+
+                                <!-- <td>
+                                  <div class="d-flex align-items-center">
+                                      <div class="ms-2">
+                                          <h6 class="mb-1 font-14">Index volatility 10s</h6>
+                                          <p class="mb-0 font-13 text-secondary">3 ticks</p>
+                                      </div>
+                                  </div>
+                              </td> -->
+
                                 <td>Jan 10, 2021</td>
                                 <td>+256.00</td>
                                 <td>
-                                    <div class="badge rounded-pill bg-success w-100">Completed</div>
+                                    <div class="badge rounded-pill bg-success w-100">Vitória</div>
                                 </td>
                             </tr>
                             <tr>
@@ -302,7 +313,7 @@
                                 <td>Jan 12, 2021</td>
                                 <td>+566.00</td>
                                 <td>
-                                    <div class="badge rounded-pill bg-info text-dark w-100">In Progress</div>
+                                    <div class="badge rounded-pill bg-info text-dark w-100">Em progresso</div>
                                 </td>
                             </tr>
                             <tr>
@@ -320,7 +331,7 @@
                                 <td>Jan 14, 2021</td>
                                 <td>+636.00</td>
                                 <td>
-                                    <div class="badge rounded-pill bg-danger w-100">Declined</div>
+                                    <div class="badge rounded-pill bg-danger w-100">Perda</div>
                                 </td>
                             </tr>
                             <tr>
@@ -496,7 +507,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div class="">
-                        <p class="mb-1 text-secondary">Bounce Rate</p>
+                        <p class="mb-1 text-secondary">Assertividade Geral</p>
                         <h4 class="mb-0">48.32%</h4>
                     </div>
                     <div class="ms-auto">
@@ -511,7 +522,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div class="">
-                        <p class="mb-1 text-secondary">Pageviews</p>
+                        <p class="mb-1 text-secondary">Média de ganhos por dia</p>
                         <h4 class="mb-0">52.64%</h4>
                     </div>
                     <div class="ms-auto">
@@ -526,7 +537,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div class="">
-                        <p class="mb-1 text-secondary">New Sessions</p>
+                        <p class="mb-1 text-secondary">Tempo total operando</p>
                         <h4 class="mb-0">68.23%</h4>
                     </div>
                     <div class="ms-auto">
@@ -546,7 +557,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h5 class="mb-0">Top Categories</h5>
+                        <h5 class="mb-0">Tipos de robôs mais usados</h5>
                     </div>
                     <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
@@ -554,13 +565,13 @@
                 <div class="mt-5" id="chart15"></div>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Kids <span class="badge bg-success rounded-pill">25</span>
+                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">(Over e Under)Dígitos <span class="badge bg-success rounded-pill">25</span>
                 </li>
-                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Women <span class="badge bg-danger rounded-pill">10</span>
+                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">(Differ)Dígitos <span class="badge bg-danger rounded-pill">10</span>
                 </li>
-                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Men <span class="badge bg-primary rounded-pill">65</span>
+                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">(Call e PUT)Indicadores <span class="badge bg-primary rounded-pill">65</span>
                 </li>
-                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Furniture <span class="badge bg-warning text-dark rounded-pill">14</span>
+                <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">(Call e PUT)Barrier <span class="badge bg-warning text-dark rounded-pill">14</span>
                 </li>
             </ul>
         </div>
@@ -587,7 +598,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h5 class="mb-0">Sales Overiew</h5>
+                        <h5 class="mb-0">Meta definida</h5>
                     </div>
                     <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
@@ -765,7 +776,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h5 class="mb-0">Orders Summary</h5>
+                        <h5 class="mb-0">Metas</h5>
                     </div>
                     <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
